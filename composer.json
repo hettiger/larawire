@@ -1,0 +1,34 @@
+{
+    "name": "hettiger/larawire",
+    "description": "Merges Laravel with ProcessWire to get the best of both worlds!",
+    "authors": [
+        {
+            "name": "Martin Hettiger",
+            "email": "martin@hettiger.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "ryancramerdesign/processwire",
+                "version": "2.5.3",
+                "dist": {
+                    "url": "https://github.com/hettiger/ProcessWire/archive/2.5.3.zip",
+                    "type": "zip"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*",
+        "ryancramerdesign/processwire": "2.5.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Hettiger\\Larawire": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
