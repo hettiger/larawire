@@ -1,6 +1,7 @@
 {
     "name": "hettiger/larawire",
     "description": "Merges Laravel with ProcessWire to get the best of both worlds!",
+    "license": "MIT",
     "authors": [
         {
             "name": "Martin Hettiger",
