@@ -8,25 +8,82 @@ __Be aware: This package is work in progress!__
 
 ### Installation
 
-Require this package with composer using the following command:
+The installation instructions might seem a bit unfamiliar to you but are required as there is no composer package of processwire. Also the releases on GitHub are off so I've forked the original package maintaining the releases myself. I hope you understand that I refuse to put a fork on packagist.
+
+Open your `composer.json` file and add the following block right above the require section:
+
+```json
+// composer.json
+
+...
+
+"repositories": [
+    {
+        "type": "package",
+        "package": {
+            "name": "ryancramerdesign/processwire",
+            "version": "2.5.3",
+            "dist": {
+                "url": "https://github.com/hettiger/ProcessWire/archive/2.5.3.zip",
+                "type": "zip"
+            }
+        }
+    }
+],
+"require": {
+
+...
+```
+
+Now append the require section with following packages:
+
+```json
+// composer.json
+
+...
+
+"require": {
+
+    ...
+
+    "ryancramerdesign/processwire": "2.5.*",
+    "hettiger/larawire": "0.*"
+},
+
+...
+```
+
+Run a composer update in your terminal:
 
 ```bash
-composer require hettiger/larawire
+composer update -o
 ```
 
 After updating composer, add the ServiceProvider to the providers array in app/config/app.php
 
 ```php
-'Hettiger\Larawire\LarawireServiceProvider',
+// app/config/app.php
+
+...
+
+'providers' => array(
+
+    ...
+
+    'Hettiger\Larawire\LarawireServiceProvider',
+
+),
+
+...
 ```
 
-You can now install larawire, to merge Laravel with ProcessWire:
+You can now install larawire, to merge Laravel with ProcessWire using your terminal:
 
 ```bash
 php artisan larawire:install
 ```
 
-Follow the instructions by your terminal.
+Follow the instructions prompted by your terminal.
 
 ### What's next?
 

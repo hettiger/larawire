@@ -8,30 +8,14 @@
             "email": "martin@hettiger.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "name": "ryancramerdesign/processwire",
-                "version": "master",
-                "source": {
-                    "url": "git@github.com:ryancramerdesign/ProcessWire.git",
-                    "type": "git",
-                    "reference": "origin/master"
-                }
-            }
-        }
-    ],
     "require": {
         "php": ">=5.4.0",
-        "illuminate/support": "4.2.*",
-        "ryancramerdesign/processwire": "master"
+        "illuminate/support": "4.2.*"
     },
     "autoload": {
         "psr-0": {
             "Hettiger\\Larawire": "src/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "minimum-stability": "stable"
 }
