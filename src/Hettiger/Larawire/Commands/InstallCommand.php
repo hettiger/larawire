@@ -151,7 +151,7 @@ class InstallCommand extends Command {
         $dest = public_path() . '/wire';
         $this->abortOnExistingDir($dest);
 
-        $this->recursiveCopy(__DIR__ . '/../../../../vendor/ryancramerdesign/processwire/wire', $dest);
+        $this->recursiveCopy(public_path() . '/../vendor/ryancramerdesign/processwire/wire', $dest);
     }
 
     /**
