@@ -13,10 +13,11 @@
             "type": "package",
             "package": {
                 "name": "ryancramerdesign/processwire",
-                "version": "2.5.3",
-                "dist": {
-                    "url": "https://github.com/hettiger/ProcessWire/archive/2.5.3.zip",
-                    "type": "zip"
+                "version": "master",
+                "source": {
+                    "url": "git@github.com:ryancramerdesign/ProcessWire.git",
+                    "type": "git",
+                    "reference": "origin/master"
                 }
             }
         }
@@ -24,12 +25,13 @@
     "require": {
         "php": ">=5.4.0",
         "illuminate/support": "4.2.*",
-        "ryancramerdesign/processwire": "2.5.*"
+        "ryancramerdesign/processwire": "master"
     },
     "autoload": {
         "psr-0": {
             "Hettiger\\Larawire": "src/"
         }
     },
-    "minimum-stability": "stable"
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

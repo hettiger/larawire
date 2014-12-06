@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7eab8b0345116a5a22f763a8a547951d",
+    "hash": "654ce391d8aeb0ca2abc6b3409635e8a",
     "packages": [
         {
             "name": "illuminate/support",
@@ -56,21 +56,21 @@
         },
         {
             "name": "ryancramerdesign/processwire",
-            "version": "2.5.3",
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/hettiger/ProcessWire/archive/2.5.3.zip",
-                "reference": null,
-                "shasum": null
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:ryancramerdesign/ProcessWire.git",
+                "reference": "origin/master"
             },
-            "type": "library"
+            "type": "library",
+            "time": "2014-10-03 15:48:29"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
-    "prefer-stable": false,
+    "prefer-stable": true,
     "platform": {
         "php": ">=5.4.0"
     },
